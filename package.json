@@ -1,0 +1,19 @@
+{
+  "name": "com.bewildered.tags",
+  "version": "1.0.0",
+  "displayName": "Bewildered Tags",
+  "description": "ScriptableObject based Tags",
+  "unity": "2018.1",
+  "dependencies": {
+	"com.bewildered.core": "1.2.0"
+  },
+  "keywords": [
+    "scriptableobject",
+	"tag"
+  ],
+  "author": {
+    "name": "Bewildered",
+    "email": "contact@bewilderedstudios.com",
+    "url": "https://www.bewilderedstudios.com"
+  }
+}

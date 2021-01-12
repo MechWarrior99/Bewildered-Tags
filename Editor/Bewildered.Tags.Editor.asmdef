@@ -1,0 +1,17 @@
+{
+    "name": "Bewildered.Tags.Editor",
+    "references": [
+        "GUID:d68140d6ead36744da77728f2f002275",
+        "GUID:dada115f4e1e58d49beaafba1a01f1ba",
+        "GUID:1dd7505d1eebef74e8eedd21c1743230"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
