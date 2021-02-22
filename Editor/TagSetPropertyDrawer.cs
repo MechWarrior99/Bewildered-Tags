@@ -1,33 +1,35 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEditor;
-using Bewildered.Core.Editor;
+using Bewildered.Editor;
 
 namespace Bewildered.Tags.Editor
 {
     [CustomPropertyDrawer(typeof(TagSet))]
     internal class TagSetPropertyDrawer : PropertyDrawer
     {
-        private ReorderablePropertyList _list;
         private SerializedProperty _property;
+
+        private Dictionary<string, ReorderablePropertyList> _propertyLists = new Dictionary<string, ReorderablePropertyList>();
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            if (_list != null)
-                _list.Draw(position);
+            _propertyLists[property.propertyPath].Draw(position);
         }
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            if (_list == null)
+            _property = property;
+            if (!_propertyLists.TryGetValue(property.propertyPath, out ReorderablePropertyList list))
             {
-                _property = property;
-                _list = new ReorderablePropertyList(property.FindPropertyRelative("_hashsetList"), true, false, false, false);
-                _list.DrawElementGUI += ElementGUI;
-                _list.OnAddDropdown += OnAddDropdown;
+                list = new ReorderablePropertyList(property.FindPropertyRelative("_hashsetList"), true, false, false, false);
+                list.DrawElementGUI += ElementGUI;
+                list.OnAddDropdown += OnAddDropdown;
+                _propertyLists.Add(property.propertyPath, list);
             }
 
-            if (_list != null)
-                return _list.GetHeight();
+            if (list != null)
+                return list.GetHeight();
             else
                 return EditorGUIUtility.singleLineHeight;
         }

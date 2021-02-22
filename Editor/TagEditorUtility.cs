@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEditor;
-using Bewildered.Core.Editor;
+using Bewildered.Editor;
 
 namespace Bewildered.Tags.Editor
 {

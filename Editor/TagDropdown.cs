@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
-using Bewildered.Core.Editor;
+using Bewildered.Editor;
 
 namespace Bewildered.Tags.Editor
 {

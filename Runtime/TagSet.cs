@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Bewildered.Tags
 {
     [Serializable]
-    public class TagSet : Core.UHashset<Tag>
+    public class TagSet : UHashset<Tag>
     {
 
     }

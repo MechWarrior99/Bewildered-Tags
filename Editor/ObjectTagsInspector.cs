@@ -6,7 +6,7 @@ using UnityEditor;
 namespace Bewildered.Tags.Editor
 {
     [CustomEditor(typeof(ObjectTags))]
-    public class ObjectDefinitionInspector : UnityEditor.Editor
+    public class ObjectTagsInspector : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {

@@ -36,6 +36,7 @@ namespace Bewildered.Tags.Editor
                     {
                         TagProperty = property
                     };
+                    dropdown.IsChangeProperty = true;
                     dropdown.Reload();
                     dropdown.Show(GUIUtility.GUIToScreenRect(fieldRect));
                 }

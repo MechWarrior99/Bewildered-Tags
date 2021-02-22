@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Bewildered.Core.Editor;
+using Bewildered.Editor;
 
 namespace Bewildered.Tags.Editor
 {
