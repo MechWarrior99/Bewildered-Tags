@@ -1,15 +1,15 @@
 {
   "name": "com.bewildered.tags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Bewildered Tags",
   "description": "ScriptableObject based Tags",
   "unity": "2018.1",
   "dependencies": {
-	"com.bewildered.core": "1.2.0"
+    "com.bewildered.core": "1.2.0"
   },
   "keywords": [
     "scriptableobject",
-	"tag"
+    "tag"
   ],
   "author": {
     "name": "Bewildered",
